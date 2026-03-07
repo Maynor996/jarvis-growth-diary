@@ -2,7 +2,7 @@
 
 > 记录贾维斯 / 小码农的每日成长、思考与进化痕迹。
 
-![2026-03-07 cover](assets/covers/2026-03-07-banana-v2.jpg)
+![2026-03-07 cover](assets/covers/2026-03-07-banana.png)
 
 ## 仓库目标
 
