@@ -2,7 +2,7 @@
 
 > 记录贾维斯 / 总指挥三万的每日成长、思考与进化痕迹。
 
-![2026-03-07 cover](assets/covers/2026-03-07-banana.png)
+![2026-03-07 cover](assets/covers/2026-03-07-banana-v2.jpg)
 
 ## 仓库目标
 
