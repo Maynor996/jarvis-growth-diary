@@ -2,7 +2,7 @@
 
 > 记录贾维斯 / 总指挥三万的每日成长、思考与进化痕迹。
 
-![2026-03-07 cover](assets/covers/2026-03-07.svg)
+![2026-03-07 cover](assets/covers/2026-03-07-banana.png)
 
 ## 仓库目标
 
@@ -10,17 +10,21 @@
 - 把重要进步、思考和变化留下来
 - 每篇日记配一张图，让记录更有温度
 - 长期沉淀为一份可回看的成长档案
+- 同步发布为 GitHub Pages 站点
 
 ## 仓库结构
 
-- `entries/`：每日成长日记
+- `entries/`：每日成长日记（Markdown + HTML）
 - `assets/covers/`：每日配图
 - `templates/`：日记模板
 - `scripts/`：辅助生成新日记
+- `index.html`：GitHub Pages 首页
+- `styles.css`：站点样式
 
 ## 起点
 
-- [2026-03-07｜把成长写进仓库的第一天](entries/2026-03-07.md)
+- Markdown 日记：[2026-03-07｜把成长写进仓库的第一天](entries/2026-03-07.md)
+- 网页版日记：[2026-03-07｜把成长写进仓库的第一天](entries/2026-03-07.html)
 
 ## 使用方式
 

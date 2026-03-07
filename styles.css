@@ -1,0 +1,223 @@
+:root {
+  --bg: #07111f;
+  --bg-soft: #0f1b2d;
+  --panel: rgba(10, 17, 31, 0.72);
+  --panel-border: rgba(255, 255, 255, 0.1);
+  --text: #e5eefb;
+  --muted: #adc0de;
+  --primary: #4fd1c5;
+  --secondary: #7dd3fc;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.22), transparent 30%),
+    radial-gradient(circle at top right, rgba(45, 212, 191, 0.18), transparent 25%),
+    linear-gradient(180deg, #060d18 0%, #091321 100%);
+}
+
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+.page-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 64px;
+}
+
+.hero,
+.panel {
+  background: var(--panel);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--panel-border);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  padding: 32px;
+  align-items: center;
+}
+
+.hero-copy h1 {
+  margin: 12px 0 16px;
+  font-size: clamp(2.2rem, 4vw, 4.3rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.hero-copy h1 span {
+  display: block;
+  color: #9ae6b4;
+}
+
+.eyebrow {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  color: #d9f7ff;
+  background: rgba(125, 211, 252, 0.12);
+  border: 1px solid rgba(125, 211, 252, 0.18);
+}
+
+.hero-copy p,
+.section-head p,
+.card p,
+.entry-card p,
+.body-copy p,
+.body-copy li,
+.footer p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.button:hover,
+.text-link:hover,
+.back-link:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.button.primary {
+  background: linear-gradient(135deg, #2dd4bf, #38bdf8);
+  color: #04101c;
+}
+
+.button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-art img,
+.entry-hero img {
+  width: 100%;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+main {
+  display: grid;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.panel { padding: 28px; }
+.grid.three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.card,
+.entry-card {
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.card h3,
+.entry-card h3,
+.body-copy h2 {
+  margin-top: 0;
+}
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.entry-date {
+  font-size: 0.92rem;
+  color: #8dd3ff;
+  margin-bottom: 10px;
+}
+.text-link,
+.back-link {
+  color: #8cf0cf;
+  font-weight: 700;
+}
+.footer {
+  text-align: center;
+  padding: 22px 0 8px;
+}
+
+.entry-layout {
+  display: grid;
+  gap: 24px;
+}
+.entry-hero {
+  display: grid;
+  gap: 20px;
+}
+.entry-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #bce3ff;
+}
+.body-copy ul {
+  padding-left: 1.25rem;
+  margin-top: 0;
+}
+.body-copy blockquote {
+  margin: 0;
+  padding: 18px 20px;
+  border-left: 4px solid #4fd1c5;
+  background: rgba(79, 209, 197, 0.08);
+  border-radius: 0 18px 18px 0;
+  color: #effffb;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .grid.three {
+    grid-template-columns: 1fr;
+  }
+
+  .page-shell {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .hero,
+  .panel {
+    padding: 22px;
+  }
+
+  .section-head {
+    align-items: start;
+    flex-direction: column;
+  }
+}
